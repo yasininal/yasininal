@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yasin İnal — AI & ML Developer</title>
+  <meta name="description" content="Akdeniz Üniversitesi Bilgisayar Mühendisliği öğrencisi. Makine öğrenmesi ve derin öğrenme üzerine odaklanmış yapay zeka projeleri geliştiriyor." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Animated Background -->
+  <div class="bg-canvas" id="bgCanvas">
+    <div class="bg-orb orb-1"></div>
+    <div class="bg-orb orb-2"></div>
+    <div class="bg-orb orb-3"></div>
+    <div class="grid-overlay"></div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-bracket">&lt;</span>YI<span class="logo-bracket">/&gt;</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about" class="nav-link">Hakkımda</a></li>
+        <li><a href="#skills" class="nav-link">Yetenekler</a></li>
+        <li><a href="#projects" class="nav-link">Projeler</a></li>
+        <li><a href="#contact" class="nav-link">İletişim</a></li>
+      </ul>
+      <a href="https://github.com/yasininal" target="_blank" class="btn btn-outline nav-cta">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+        GitHub
+      </a>
+      <button class="hamburger" id="hamburger" aria-label="Menüyü aç">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="pulse-dot"></span>
+        Akdeniz Üniversitesi · Bilgisayar Mühendisliği
+      </div>
+      <h1 class="hero-title">
+        Merhaba, ben
+        <span class="gradient-text" id="typingName">Yasin İnal</span>
+      </h1>
+      <p class="hero-subtitle">
+        <span class="type-wrapper">
+          <span class="type-text" id="typeText">Yapay Zeka & Makine Öğrenmesi Geliştiricisi</span>
+        </span>
+      </p>
+      <p class="hero-description">
+        Makine öğrenmesi ve derin öğrenme üzerine tutkuyla çalışan bir bilgisayar mühendisliği öğrencisiyim.
+        Gerçek dünya problemlerini yapay zeka ile çözen projeler geliştiriyorum.
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary" id="hero-cta">
+          Projelerimi Gör
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="https://github.com/yasininal" target="_blank" class="btn btn-glass" id="hero-github">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+          GitHub Profilim
+        </a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-item">
+          <span class="stat-number" data-target="11">0</span>
+          <span class="stat-label">Repository</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-number" data-target="12">0</span>
+          <span class="stat-label">Takipçi</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-number" data-target="5">0</span>
+          <span class="stat-label">AI Projesi</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="avatar-container">
+        <img
+          src="https://avatars.githubusercontent.com/u/139866459?v=4"
+          alt="Yasin İnal"
+          class="avatar-img"
+          id="avatar-img"
+        />
+        <div class="avatar-ring"></div>
+        <div class="avatar-ring ring-2"></div>
+        <div class="floating-badge badge-1">
+          <span class="badge-icon">🤖</span>
+          <span>Machine Learning</span>
+        </div>
+        <div class="floating-badge badge-2">
+          <span class="badge-icon">🧠</span>
+          <span>Deep Learning</span>
+        </div>
+        <div class="floating-badge badge-3">
+          <span class="badge-icon">👁️</span>
+          <span>Computer Vision</span>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator" id="scrollIndicator">
+      <span>Aşağı kaydır</span>
+      <div class="scroll-arrow">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Hakkımda</span>
+        <h2 class="section-title">Kim Olduğumu Keşfet</h2>
+        <p class="section-subtitle">Yapay zeka ile geleceği şekillendirmeye çalışan meraklı bir geliştirici</p>
+      </div>
+      <div class="about-grid">
+        <div class="about-text">
+          <div class="about-card">
+            <div class="about-card-icon">🎓</div>
+            <div class="about-card-content">
+              <h3>Eğitim</h3>
+              <p><strong>Akdeniz Üniversitesi</strong></p>
+              <p>Bilgisayar Mühendisliği</p>
+            </div>
+          </div>
+          <div class="about-card">
+            <div class="about-card-icon">🎯</div>
+            <div class="about-card-content">
+              <h3>Odak Alanlarım</h3>
+              <p>Makine öğrenmesi ve derin öğrenme modellerinin gerçek dünya problemlerine uygulanması. Computer vision, NLP ve RAG sistemleri üzerine aktif geliştirme yapıyorum.</p>
+            </div>
+          </div>
+          <div class="about-card">
+            <div class="about-card-icon">🚀</div>
+            <div class="about-card-content">
+              <h3>Topluluk</h3>
+              <p>Akdeniz Üniversitesi Veri Bilimi Topluluğu bünyesinde 16 haftalık kapsamlı mentorluk programı düzenleyerek öğrencileri sektöre hazırlıyorum.</p>
+            </div>
+          </div>
+          <div class="about-card">
+            <div class="about-card-icon">⚡</div>
+            <div class="about-card-content">
+              <h3>Şu An Üzerinde Çalıştıklarım</h3>
+              <p>AntAgri-Guard: Tarım alanında yapay zeka destekli koruma sistemi geliştiriyorum.</p>
+            </div>
+          </div>
+        </div>
+        <div class="about-code-window">
+          <div class="code-window">
+            <div class="code-window-header">
+              <div class="code-dots">
+                <span class="dot dot-red"></span>
+                <span class="dot dot-yellow"></span>
+                <span class="dot dot-green"></span>
+              </div>
+              <span class="code-filename">yasin.py</span>
+            </div>
+            <div class="code-body">
+              <pre class="code-content"><code><span class="kw">class</span> <span class="cls">YasinInal</span>:
+    <span class="kw">def</span> <span class="fn">__init__</span>(<span class="self">self</span>):
+        <span class="self">self</span>.name = <span class="str">"Yasin İnal"</span>
+        <span class="self">self</span>.university = <span class="str">"Akdeniz Üniversitesi"</span>
+        <span class="self">self</span>.degree = <span class="str">"Bilgisayar Mühendisliği"</span>
+        <span class="self">self</span>.location = <span class="str">"Türkiye 🇹🇷"</span>
+
+        <span class="self">self</span>.interests = [
+            <span class="str">"Machine Learning"</span>,
+            <span class="str">"Deep Learning"</span>,
+            <span class="str">"Computer Vision"</span>,
+            <span class="str">"NLP & RAG Systems"</span>,
+            <span class="str">"AI for Good"</span>,
+        ]
+
+        <span class="self">self</span>.languages = {
+            <span class="str">"Python"</span>: <span class="str">"⭐⭐⭐⭐⭐"</span>,
+            <span class="str">"TypeScript"</span>: <span class="str">"⭐⭐⭐⭐"</span>,
+            <span class="str">"HTML/CSS"</span>: <span class="str">"⭐⭐⭐⭐"</span>,
+            <span class="str">"SQL"</span>: <span class="str">"⭐⭐⭐"</span>,
+        }
+
+    <span class="kw">def</span> <span class="fn">get_current_focus</span>(<span class="self">self</span>):
+        <span class="kw">return</span> <span class="str">"Building AI solutions 🤖"</span>
+</code></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="section section-dark" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Yetenekler</span>
+        <h2 class="section-title">Teknoloji Yığını</h2>
+        <p class="section-subtitle">Projelerimde aktif olarak kullandığım araçlar ve teknolojiler</p>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <div class="skill-cat-header">
+            <span class="skill-cat-icon">🤖</span>
+            <h3>AI & Machine Learning</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag tag-ai">TensorFlow</span>
+            <span class="skill-tag tag-ai">PyTorch</span>
+            <span class="skill-tag tag-ai">Scikit-learn</span>
+            <span class="skill-tag tag-ai">RAG Systems</span>
+            <span class="skill-tag tag-ai">LangChain</span>
+            <span class="skill-tag tag-ai">HDBSCAN</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <div class="skill-cat-header">
+            <span class="skill-cat-icon">👁️</span>
+            <h3>Computer Vision</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag tag-cv">OpenCV</span>
+            <span class="skill-tag tag-cv">MediaPipe</span>
+            <span class="skill-tag tag-cv">OCR</span>
+            <span class="skill-tag tag-cv">YOLOv8</span>
+            <span class="skill-tag tag-cv">Image Processing</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <div class="skill-cat-header">
+            <span class="skill-cat-icon">💻</span>
+            <h3>Programlama</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag tag-lang">Python</span>
+            <span class="skill-tag tag-lang">TypeScript</span>
+            <span class="skill-tag tag-lang">JavaScript</span>
+            <span class="skill-tag tag-lang">HTML/CSS</span>
+            <span class="skill-tag tag-lang">SQL</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <div class="skill-cat-header">
+            <span class="skill-cat-icon">🗄️</span>
+            <h3>Veri & Backend</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag tag-data">Pandas</span>
+            <span class="skill-tag tag-data">NumPy</span>
+            <span class="skill-tag tag-data">PostgreSQL</span>
+            <span class="skill-tag tag-data">Vector DBs</span>
+            <span class="skill-tag tag-data">Web Scraping</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <div class="skill-cat-header">
+            <span class="skill-cat-icon">🛠️</span>
+            <h3>Araçlar & DevOps</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag tag-tools">Git & GitHub</span>
+            <span class="skill-tag tag-tools">Docker</span>
+            <span class="skill-tag tag-tools">Jupyter</span>
+            <span class="skill-tag tag-tools">Linux</span>
+            <span class="skill-tag tag-tools">VS Code</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <div class="skill-cat-header">
+            <span class="skill-cat-icon">📊</span>
+            <h3>NLP & Metin</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag tag-nlp">Transformers</span>
+            <span class="skill-tag tag-nlp">Embeddings</span>
+            <span class="skill-tag tag-nlp">Sentence-BERT</span>
+            <span class="skill-tag tag-nlp">Spam Detection</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Projeler</span>
+        <h2 class="section-title">Öne Çıkan Çalışmalar</h2>
+        <p class="section-subtitle">GitHub'da paylaşılan gerçek dünya AI projeleri</p>
+      </div>
+      <div class="projects-grid">
+
+        <!-- AntAgri-Guard -->
+        <div class="project-card card-featured">
+          <div class="project-card-glow"></div>
+          <div class="project-header">
+            <div class="project-icon">🌱</div>
+            <div class="project-badges">
+              <span class="project-badge badge-new">Yeni</span>
+              <span class="project-lang lang-python">Python</span>
+            </div>
+          </div>
+          <h3 class="project-title">AntAgri-Guard</h3>
+          <p class="project-desc">Tarım alanında yapay zeka destekli bitki koruma ve hastalık tespit sistemi. Precision agriculture için geliştirilmiş ileri görüntü işleme altyapısı.</p>
+          <div class="project-tags">
+            <span>Computer Vision</span>
+            <span>Agriculture AI</span>
+            <span>Deep Learning</span>
+          </div>
+          <a href="https://github.com/yasininal/AntAgri-Guard" target="_blank" class="project-link" id="proj-antag">
+            Görüntüle
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+          </a>
+        </div>
+
+        <!-- Psychotherapy RAG Chatbot -->
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-icon">🧠</div>
+            <div class="project-badges">
+              <span class="project-lang lang-python">Python</span>
+            </div>
+          </div>
+          <h3 class="project-title">Psychotherapy RAG Chatbot</h3>
+          <p class="project-desc">Psikoterapi alanına yönelik geliştirilmiş RAG (Retrieval-Augmented Generation) tabanlı yapay zeka sohbet botu. Bilgi tabanından bağlamsal yanıtlar üretir.</p>
+          <div class="project-tags">
+            <span>RAG</span>
+            <span>LLM</span>
+            <span>NLP</span>
+          </div>
+          <a href="https://github.com/yasininal/psychotherapy-rag-chatbot" target="_blank" class="project-link" id="proj-psych">
+            Görüntüle
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+          </a>
+        </div>
+
+        <!-- Plaka Tanıma -->
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-icon">🚗</div>
+            <div class="project-badges">
+              <span class="project-lang lang-html">HTML</span>
+            </div>
+          </div>
+          <h3 class="project-title">Plaka Tanıma Sistemi</h3>
+          <p class="project-desc">OCR tabanlı OpenCV ile otomatik plaka tanıma sistemi. Gerçek zamanlı görüntü işleme ve karakter tanıma algoritmalarıyla donatılmış tam kapsamlı çözüm.</p>
+          <div class="project-tags">
+            <span>OpenCV</span>
+            <span>OCR</span>
+            <span>Computer Vision</span>
+          </div>
+          <a href="https://github.com/yasininal/plaka_tanima_opencv" target="_blank" class="project-link" id="proj-plaka">
+            Görüntüle
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+          </a>
+        </div>
+
+        <!-- Spam Mail Detection -->
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-icon">📧</div>
+            <div class="project-badges">
+              <span class="project-lang lang-python">Python</span>
+              <span class="project-badge badge-fork">4 Fork</span>
+            </div>
+          </div>
+          <h3 class="project-title">Spam Mail Detection</h3>
+          <p class="project-desc">Makine öğrenmesi algoritmaları kullanarak e-posta spam tespiti. Naive Bayes, SVM ve ensemble metodların karşılaştırmalı analizini içerir.</p>
+          <div class="project-tags">
+            <span>ML</span>
+            <span>NLP</span>
+            <span>Classification</span>
+          </div>
+          <a href="https://github.com/yasininal/spam-mail-detection-ml" target="_blank" class="project-link" id="proj-spam">
+            Görüntüle
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+          </a>
+        </div>
+
+        <!-- MediaPipe -->
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-icon">🐒</div>
+            <div class="project-badges">
+              <span class="project-lang lang-python">Python</span>
+            </div>
+          </div>
+          <h3 class="project-title">MediaPipe Monkey Meme</h3>
+          <p class="project-desc">Google MediaPipe kullanılarak gerçek zamanlı yüz ve el takibi ile interaktif meme üretici. Pose detection ve gesture recognition teknolojileri.</p>
+          <div class="project-tags">
+            <span>MediaPipe</span>
+            <span>Pose Estimation</span>
+            <span>Real-time</span>
+          </div>
+          <a href="https://github.com/yasininal/mediapipe_monkey_meme" target="_blank" class="project-link" id="proj-media">
+            Görüntüle
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+          </a>
+        </div>
+
+        <!-- University Data Scrapers -->
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-icon">🏫</div>
+            <div class="project-badges">
+              <span class="project-lang lang-python">Python</span>
+              <span class="project-badge badge-fork">2 Fork</span>
+            </div>
+          </div>
+          <h3 class="project-title">University Data Scrapers</h3>
+          <p class="project-desc">EngiRank, ScholarGPS ve İTÜ sürdürülebilirlik haberleri için geliştirilmiş otomatik veri toplama araçları. Kurumsal raporlama ve benchmarking süreçlerini destekler.</p>
+          <div class="project-tags">
+            <span>Web Scraping</span>
+            <span>Data Pipeline</span>
+            <span>Automation</span>
+          </div>
+          <a href="https://github.com/yasininal/university-data-scrapers" target="_blank" class="project-link" id="proj-uni">
+            Görüntüle
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+          </a>
+        </div>
+
+      </div>
+      <div class="projects-footer">
+        <a href="https://github.com/yasininal?tab=repositories" target="_blank" class="btn btn-outline" id="all-repos">
+          Tüm Repoları Gör
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- GitHub Stats Section -->
+  <section class="section section-dark" id="github-stats">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">GitHub</span>
+        <h2 class="section-title">Geliştirici Aktivitesi</h2>
+        <p class="section-subtitle">Open-source katkıları ve proje istatistikleri</p>
+      </div>
+      <div class="github-stats-grid">
+        <div class="github-stats-card" id="stats-repos">
+          <div class="stats-icon">📦</div>
+          <div class="stats-number" data-target="11">0</div>
+          <div class="stats-label">Public Repo</div>
+        </div>
+        <div class="github-stats-card" id="stats-followers">
+          <div class="stats-icon">👥</div>
+          <div class="stats-number" data-target="12">0</div>
+          <div class="stats-label">Takipçi</div>
+        </div>
+        <div class="github-stats-card" id="stats-following">
+          <div class="stats-icon">🔭</div>
+          <div class="stats-number" data-target="17">0</div>
+          <div class="stats-label">Takip Edilen</div>
+        </div>
+        <div class="github-stats-card" id="stats-forks">
+          <div class="stats-icon">🍴</div>
+          <div class="stats-number" data-target="6">0</div>
+          <div class="stats-label">Toplam Fork</div>
+        </div>
+      </div>
+      <div class="github-contrib-banner">
+        <img
+          src="https://ghchart.rshah.org/6366f1/yasininal"
+          alt="Yasin İnal GitHub Katkı Grafiği"
+          class="contrib-chart"
+          loading="lazy"
+        />
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">İletişim</span>
+        <h2 class="section-title">Bana Ulaş</h2>
+        <p class="section-subtitle">İş birliği, soru veya sohbet için her zaman hazırım</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-links">
+          <a href="https://github.com/yasininal" target="_blank" class="contact-card" id="contact-github">
+            <div class="contact-card-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+            </div>
+            <div class="contact-card-text">
+              <h4>GitHub</h4>
+              <p>github.com/yasininal</p>
+            </div>
+            <svg class="contact-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+
+          <a href="https://github.com/yasininal/AU-Veri-Bilimi-Akademisi-2026" target="_blank" class="contact-card" id="contact-community">
+            <div class="contact-card-icon community-icon">🏛️</div>
+            <div class="contact-card-text">
+              <h4>AU Veri Bilimi Topluluğu</h4>
+              <p>16 Haftalık Mentorluk Programı</p>
+            </div>
+            <svg class="contact-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+
+        <div class="contact-cta-box">
+          <div class="contact-cta-bg"></div>
+          <div class="contact-cta-content">
+            <h3>İş Birliği Yapalım!</h3>
+            <p>
+              Yapay zeka, makine öğrenmesi veya yazılım geliştirme konusunda bir projen mi var?
+              Birlikte harika şeyler inşa edebiliriz.
+            </p>
+            <div class="contact-cta-badges">
+              <span>🤖 AI Projeleri</span>
+              <span>👁️ Computer Vision</span>
+              <span>🧠 Deep Learning</span>
+              <span>📊 Veri Analizi</span>
+            </div>
+            <a href="https://github.com/yasininal" target="_blank" class="btn btn-primary" id="contact-cta-btn">
+              GitHub'da Bul
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <span class="footer-logo">
+            <span class="logo-bracket">&lt;</span>YI<span class="logo-bracket">/&gt;</span>
+          </span>
+          <p>Yasin İnal · AI & ML Developer</p>
+        </div>
+        <div class="footer-links">
+          <a href="#hero">Ana Sayfa</a>
+          <a href="#about">Hakkımda</a>
+          <a href="#projects">Projeler</a>
+          <a href="https://github.com/yasininal" target="_blank">GitHub</a>
+        </div>
+        <p class="footer-copy">
+          © 2026 Yasin İnal. Sevgiyle kodlandı 💜
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
