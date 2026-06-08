@@ -241,25 +241,8 @@ class YasinInal:
 
 </div>
 
----
 
-## 📊 GitHub İstatistikleri
 
-<div align="center">
-
-<img height="165" src="https://github-readme-stats.vercel.app/api?username=yasininal&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=818cf8&icon_color=818cf8&text_color=c9d1d9&rank_icon=github" />
-&nbsp;
-<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=yasininal&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=818cf8&text_color=c9d1d9&langs_count=6" />
-
-<br/><br/>
-
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=yasininal&theme=tokyonight&hide_border=true&background=0d1117&stroke=818cf8&ring=818cf8&fire=c084fc&currStreakLabel=818cf8" />
-
-<br/><br/>
-
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=yasininal&theme=tokyo-night&hide_border=true&bg_color=0d1117&color=818cf8&line=818cf8&point=c084fc&area=true" />
-
-</div>
 
 
 
