@@ -261,20 +261,8 @@ class YasinInal:
 
 </div>
 
----
 
-## 🏛️ Topluluk
 
-<div align="center">
-
-**Akdeniz Üniversitesi Veri Bilimi Topluluğu** üyesi olarak  
-öğrencileri sektöre hazırlayan **16 haftalık mentorluk programı** düzenliyorum.
-
-[![AU Veri Bilimi Akademisi](https://img.shields.io/badge/AU%20Veri%20Bilimi%20Akademisi-Mentorluk%20Programı-818cf8?style=for-the-badge&logo=github)](https://github.com/yasininal/AU-Veri-Bilimi-Akademisi-2026)
-
-</div>
-
----
 
 <div align="center">
 
