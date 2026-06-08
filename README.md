@@ -45,6 +45,11 @@ class YasinInal:
         self.gpa         = 3.23
         self.location    = "Türkiye 🇹🇷"
 
+        self.experience  = [
+            "👨‍🏫 Teaching Assistant & Mentor  @ T3",
+            "🔬 Proje Danışmanı               @ Deneyap Türkiye",
+        ]
+
         self.interests   = [
             "Machine Learning & Deep Learning",
             "Computer Vision",
