@@ -26,9 +26,7 @@
 
 <img src="https://komarev.com/ghpvc/?username=yasininal&style=flat-square&color=818cf8&label=Profil+Görüntülenme" alt="profile views" />
 &nbsp;
-<a href="https://github.com/yasininal?tab=followers">
-  <img src="https://img.shields.io/github/followers/yasininal?style=flat-square&color=818cf8&labelColor=1e1b4b&label=Takipçi" />
-</a>
+![Followers](https://img.shields.io/github/followers/yasininal?style=flat-square&color=818cf8&label=Takipçi)
 
 </div>
 
@@ -208,7 +206,7 @@ class YasinInal:
       <br/><sub><b>VS Code</b></sub>
     </td>
     <td align="center" width="96">
-      <img src="https://skillicons.dev/icons?i=jupyter" width="65" height="65" alt="Jupyter"/>
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original-wordmark.svg" width="65" height="65" alt="Jupyter"/>
       <br/><sub><b>Jupyter</b></sub>
     </td>
   </tr>
