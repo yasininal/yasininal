@@ -48,6 +48,7 @@ class YasinInal:
         self.experience  = [
             "👨‍🏫 Teaching Assistant & Mentor  @ T3",
             "🔬 Proje Danışmanı               @ Deneyap Türkiye",
+            "💻 IT Staff                      @ UYCEP",
         ]
 
         self.interests   = [
