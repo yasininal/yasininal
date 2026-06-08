@@ -22,15 +22,13 @@
   <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
 </a>
 &nbsp;
-<a href="mailto:yasininal_55@hotmail.com" target="_blank">
-  <img src="https://img.shields.io/badge/Hotmail-0078D4?style=for-the-badge&logo=microsoft-outlook&logoColor=white" alt="Hotmail"/>
+<a href="mailto:yasininal007@gmail.com" target="_blank">
+  <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail"/>
 </a>
 
 <br/><br/>
 
 <img src="https://komarev.com/ghpvc/?username=yasininal&style=flat-square&color=818cf8&label=Profil+Görüntülenme" alt="profile views" />
-&nbsp;
-![Followers](https://img.shields.io/github/followers/yasininal?style=flat-square&color=818cf8&label=Takipçi)
 
 </div>
 
@@ -275,5 +273,29 @@ class YasinInal:
 *"Yapay zeka ile gerçek dünya problemlerini çözmeye odaklanıyorum."*
 
 **⭐ Eğer projelerimi beğendiyseniz star atmayı unutmayın!**
+
+</div>
+
+---
+
+## 🤝 Let's Connect
+
+<div align="center">
+
+I'm open to **internship opportunities**, **collaborations**, or just a good **AI conversation**! 🚀
+
+<br/>
+
+📧 &nbsp;[yasininal007@gmail.com](mailto:yasininal007@gmail.com) &nbsp;·&nbsp; 💼 &nbsp;[linkedin.com/in/yasin-taha-inal](https://www.linkedin.com/in/yasin-taha-inal-5bb836315/)
+
+<br/>
+
+<a href="mailto:yasininal007@gmail.com">
+  <img src="https://img.shields.io/badge/Drop%20me%20an%20email-D14836?style=for-the-badge&logo=gmail&logoColor=white"/>
+</a>
+&nbsp;
+<a href="https://www.linkedin.com/in/yasin-taha-inal-5bb836315/">
+  <img src="https://img.shields.io/badge/Connect%20on%20LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"/>
+</a>
 
 </div>
