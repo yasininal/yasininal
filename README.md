@@ -41,6 +41,8 @@ class YasinInal:
     def __init__(self):
         self.university  = "Akdeniz Üniversitesi"
         self.degree      = "Bilgisayar Mühendisliği"
+        self.year        = "3. Sınıf"
+        self.gpa         = 3.23
         self.location    = "Türkiye 🇹🇷"
 
         self.interests   = [
