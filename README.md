@@ -54,7 +54,7 @@ class YasinInal:
         return "🔭 AntAgri-Guard — Tarım için AI destekli bitki koruma sistemi"
 
     def community(self):
-        return "🏛️ AU Veri Bilimi Akademisi — 16 Haftalık Mentorluk Programı"
+        return "🏛️ Akdeniz Veri Bilimi Topluluğu — Yönetim Kurulu Üyesi"
 ```
 
 ---
